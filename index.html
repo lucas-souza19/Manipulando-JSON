@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - DWE</title>
+
+    <!-- MATERIAL ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        <main>
+            <div class="top">
+                <h1>Tabela dinâmica com JSON</h1>
+                <div class="alterar-tema">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+            </div>
+
+            <div class="pedidos-recentes">
+                <h2>Pedidos Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome do Produto</th>
+                            <th>Nº do Produto</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="display">
+                        
+                    </tbody>
+                </table>
+                <a href="#" onclick="exibirDados()">Exibir Dados</a>
+            </div>
+        </main>
+        <!-- --------- FIM DA MAIN  ---------- -->
+
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="pedidos.json"></script>
+</body>
+
+</html>
